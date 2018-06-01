@@ -162,15 +162,3 @@ VALUES (N'ADMIN', 'admin', '123')
 	where MaCanHo = 'A2'
 	INSERT INTO PHIEUTHUTIEN
 	VALUES (1, 1, 1, '5/9/2018', 6, 36000000)
-
-	--SELECT * FROM PHIEUTHUTIEN
---INSERT INTO HOPDONG
---VALUES (1, '5/9/2018', 1, 'A2', 6000000, 6)
---SELECT * FROM HOPDONG
-
---CREATE PROCEDURE sp_Themhopdong @Mahopdong integer, @Ngaybatdauthue DateTime, @Mank integer, @Macanho varchar(10), @Gia integer, @Thoigianthue integer
---AS  
---begin
---		insert into HOPDONG Values(@Mahopdong, @Ngaybatdauthue, @Mank, @Macanho, @Gia, @Thoigianthue)
---		update CANHO set TinhTrang = N'Đã thuê' where MaCanHo = @Macanho
---end
