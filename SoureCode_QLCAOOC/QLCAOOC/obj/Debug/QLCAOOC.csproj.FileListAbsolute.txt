@@ -1,0 +1,208 @@
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\ApplicationInsights.config
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\csc.exe
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\csc.exe.config
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\csc.rsp
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\csi.exe
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\csi.rsp
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.AppContext.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\vbc.exe
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\vbc.exe.config
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\vbc.rsp
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\VBCSCompiler.exe
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\QLCAOOC.dll.config
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\QLCAOOC.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\QLCAOOC.pdb
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Antlr3.Runtime.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\EntityFramework.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\EntityFramework.SqlServer.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Web.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Newtonsoft.Json.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Owin.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Helpers.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Mvc.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Optimization.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Razor.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Razor.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\WebGrease.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Helpers.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Mvc.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Optimization.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.Razor.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Razor.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Antlr3.Runtime.pdb
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Newtonsoft.Json.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\EntityFramework.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\EntityFramework.SqlServer.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Web.xml
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.csprojResolveAssemblyReference.cache
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.dll
+C:\Users\Duyen Duong\Desktop\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.pdb
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\ApplicationInsights.config
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\csc.exe
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\csc.exe.config
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\csc.rsp
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\csi.exe
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\csi.rsp
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.AppContext.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.Collections.Immutable.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.IO.FileSystem.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\System.Reflection.Metadata.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\vbc.exe
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\vbc.exe.config
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\vbc.rsp
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\VBCSCompiler.exe
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\roslyn\VBCSCompiler.exe.config
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\QLCAOOC.dll.config
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\QLCAOOC.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\QLCAOOC.pdb
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Antlr3.Runtime.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\EntityFramework.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\EntityFramework.SqlServer.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Agent.Intercept.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.DependencyCollector.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Web.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.WindowsServer.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.ApplicationInsights.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Core.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Cookies.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Facebook.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Google.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.OAuth.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Twitter.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Web.Infrastructure.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Newtonsoft.Json.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Owin.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Helpers.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Mvc.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Optimization.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Razor.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Deployment.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Razor.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\WebGrease.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Helpers.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Mvc.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Optimization.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.Razor.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Deployment.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\System.Web.WebPages.Razor.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Antlr3.Runtime.pdb
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Newtonsoft.Json.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\EntityFramework.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\EntityFramework.SqlServer.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Core.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Facebook.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Cookies.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.OAuth.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Google.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.Twitter.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.ApplicationInsights.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.DependencyCollector.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.WindowsServer.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\Microsoft.AI.Web.xml
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.pdb
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportSource.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.Shared.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\bin\stdole.dll
+D:\desktop\QUANLYCAOOC\QLCAOOC\QLCAOOC\obj\Debug\QLCAOOC.csprojResolveAssemblyReference.cache

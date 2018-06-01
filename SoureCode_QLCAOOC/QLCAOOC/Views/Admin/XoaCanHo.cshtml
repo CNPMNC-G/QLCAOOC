@@ -1,0 +1,82 @@
+﻿@model QLCAOOC.Models.CANHO
+
+@{
+    ViewBag.Title = "XÓA CĂN HỘ";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-remove"></i> Xóa căn hộ</h3></li>
+</ol>
+
+<h3>Bạn có chắc muốn xóa căn hộ này?</h3>
+<h3><font color="red">@ViewBag.Loi</font></h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Căn hộ:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCanHo)
+        </dd>
+        <dt>
+            Tình Trạng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TinhTrang)
+        </dd>
+
+        <dt>
+            Hình Ảnh:
+        </dt>
+
+        <dd>
+            <br />
+            <img src="@Url.Content("~/images/canho/" + Model.HinhAnh)" width="150px" height="120px" />
+        </dd>
+
+        <dt>
+            Ghi Chú:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+        <dt>
+            Diện Tích:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIA.DIENTICH.TenDienTich)
+        </dd>
+
+        <dt>
+            Tầng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIA.TANG.TenTang)
+        </dd>
+        <dt>
+            Giá:
+        </dt>
+
+        <dd>
+            @string.Format("{0:0,0}", Model.GIA.Gia1).Replace(",", ".") VNĐ/tháng
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" />
+        </div>
+    }
+</div>

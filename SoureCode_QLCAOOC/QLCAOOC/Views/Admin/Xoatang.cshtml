@@ -1,0 +1,42 @@
+﻿@model QLCAOOC.Models.TANG
+
+@{
+    ViewBag.Title = "XÓA TẦNG";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-remove"></i> Xóa tầng</h3></li>
+</ol>
+<h3>Bạn có chắc chắn muốn xóa tầng này?</h3>
+<h3><font color="red">@ViewBag.Loi</font></h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã tầng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaTang)
+        </dd>
+
+        <dt>
+            Tên gọi:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenTang)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" />
+        </div>
+    }
+</div>

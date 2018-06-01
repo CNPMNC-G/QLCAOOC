@@ -1,0 +1,43 @@
+﻿@model QLCAOOC.Models.PHIEUTHUTIEN
+
+@{
+    ViewBag.Title = "THÊM PHIẾU THU TIỀN";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-plus"></i> Thêm phiếu thu tiền mới</h3></li>
+</ol>
+
+@using (Html.BeginForm("themphieuthu", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Căn Hộ:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("MaHopDong")
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-5">
+                <b>Số tháng thu:</b>
+                <p><font color="red">@ViewBag.Thongbao</font></p>
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.SoThangThu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoThangThu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm mới" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}

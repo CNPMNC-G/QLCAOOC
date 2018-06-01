@@ -1,0 +1,91 @@
+﻿@model IEnumerable<QLCAOOC.Models.CANHO>
+
+@{
+    ViewBag.Title = "QUẢN LÝ CĂN HỘ";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-list"></i> Quản lý căn hộ</h3></li>
+</ol>
+
+<p>
+    <a href="@Url.Action("themcanho", "admin")"><button class="btn btn-success">Thêm căn hộ mới</button></a>
+</p>
+<table id="table_id"
+       class="table table-condensed table-striped table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Căn hộ
+            </th>
+            <th>
+                Tình trạng
+            </th>
+            <th>
+                Hình ảnh
+            </th>
+            <th>
+                Diện tích
+            </th>
+            <th>
+                Tầng
+            </th>
+            <th>
+                Giá
+            </th>
+            <th>
+                Thao tác
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaCanHo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TinhTrang)
+                </td>
+                <td>
+                    <img src="~/images/canho/@item.HinhAnh" width="120" height="80"/>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GIA.DIENTICH.TenDienTich)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GIA.TANG.TenTang)
+                </td>
+                <td>
+                    @string.Format("{0:0,0}", @item.GIA.Gia1).Replace(",", ".") VNĐ/tháng
+                </td>
+                <td>
+                    <a href="@Url.Action("suacanho", "admin", new { id = item.MaCanHo })"><button type="button" class="btn btn-warning">Sửa</button></a>
+                    <a href="@Url.Action("xoacanho", "admin", new { id = item.MaCanHo })"><button type="button" class="btn btn-danger">Xóa</button></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts
+{
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#table_id').dataTable();
+    });
+</script>
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"> </script>
+
+}
+@section css
+{
+<link rel="stylesheet"
+      href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet"
+      href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+
+}

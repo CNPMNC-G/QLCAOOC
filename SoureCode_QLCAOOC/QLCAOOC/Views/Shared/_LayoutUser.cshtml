@@ -1,0 +1,200 @@
+﻿@using QLCAOOC.Models
+<!DOCTYPE html>
+<html lang="vi">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/assets/bootstrap/css/bootstrap.css?version=1a" rel="stylesheet" />
+    <link href="~/assets/style.css?version=1b" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.js?version=1a"></script>
+    <script src="~/assets/script.js?version=1a"></script>
+    <link href="~/assets/owl-carousel/owl.theme.css" rel="stylesheet" />
+    <link href="~/assets/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <script src="~/assets/owl-carousel/owl.carousel.js"></script>
+    <link href="~/assets/slitslider/css/custom.css" rel="stylesheet" />
+    <link href="~/assets/slitslider/css/style.css" rel="stylesheet" />
+    <script src="~/assets/slitslider/js/jquery.ba-cond.min.js"></script>
+    <script src="~/assets/script.js"></script>
+    <script src="~/assets/slitslider/js/modernizr.custom.79639.js"></script>
+</head>
+<body>
+    @*<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên h</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>*@
+    <!-- Header Starts -->
+    <div class="navbar-wrapper">
+
+        <div class="navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+
+                <!-- Nav Starts -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="@Url.Action("index", "Trangchu")"><span class="glyphicon glyphicon-home"></span> TRANG CHỦ</a></li>
+                        <li class="active"><a href="@Url.Action("lienhe", "Trangchu")"><span class="glyphicon glyphicon-phone"></span> LIÊN HỆ</a></li>
+                        @if (Session["Taikhoan"] == null)
+                        {
+                            <li class="active" style="float: right"><a href="@Url.Action("login", "user")"><span class="glyphicon glyphicon-log-in"></span>  ĐĂNG NHẬP</a></li>
+                        }
+                        else
+                        {
+                            dbQLCAOOCDataContext data = new dbQLCAOOCDataContext();
+                            NHANKHAU kh = (NHANKHAU)(Session["Taikhoan"]);
+                            <li class="active" style="float: right"><a href="@Url.Action("logout", "user")"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
+                            <li class="active" style="float: right"><a href="@Url.Action("hopdong", "user")"><span class="glyphicon glyphicon-user"></span> Chào, @kh.HoTen!</a></li>
+                        }
+                    </ul>
+                </div>
+                <!-- #Nav Ends -->
+
+            </div>
+        </div>
+
+    </div>
+    <div class="banner-search">
+        <div class="container">
+            <!-- banner -->
+            <div class="searchbar">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <h3>TÌM KIẾM CĂN HỘ THEO YÊU CẦU</h3>
+                        @using (Html.BeginForm("index", "trangchu", FormMethod.Get))
+                        {
+                            <div class="row">
+                                <div class="col-lg-9 col-sm-3 ">
+                                    <input type="search" class="form-control" placeholder="Nhập từ khóa tìm kiếm" name="searchString" value="@ViewBag.Keyword">
+                                </div>
+                                <div class="col-lg-3 col-sm-3 ">
+                                    <button class="btn btn-success" type="submit">Tìm kiếm</button>
+                                </div>
+                            </div>
+                        }
+                        @using (Html.BeginForm("index", "trangchu", FormMethod.Post))
+                        {
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 ">
+                                    @Html.DropDownList("drtang", new List<SelectListItem> {
+                                                  new SelectListItem {Text = "Tầng", Value = "0"},
+                                                  new SelectListItem {Text = "Tầng 1", Value = "1"},
+                                                  new SelectListItem {Text = "Tầng 2", Value = "2"},
+                                                  new SelectListItem {Text = "Tầng 3", Value = "3"},}, new { @class = "form-control" })
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    @Html.DropDownList("drdientich", new List<SelectListItem> {
+                                                  new SelectListItem {Text = "Diện tích", Value = "0"},
+                                                  new SelectListItem {Text = "50 mét vuông", Value = "C"},
+                                                  new SelectListItem {Text = "100 mét vuông", Value = "B"},
+                                                  new SelectListItem {Text = "150 mét vuông", Value = "A"},}, new { @class = "form-control" })
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    @Html.DropDownList("drgia", new List<SelectListItem> {
+                                                  new SelectListItem {Text = "Giá", Value = "0"},
+                                                  new SelectListItem {Text = "Dưới 3.000.000 VNĐ/tháng", Value = "1"},
+                                                  new SelectListItem {Text = "Từ 3.000.000 - 5.000.000 VNĐ/tháng", Value = "2"},
+                                                  new SelectListItem {Text = "Trên 5.000.000 VNĐ/tháng", Value = "3"},}, new { @class = "form-control" })
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    <button class="btn btn-success" type="submit">Lọc</button>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+                        <center><img src="~/images/logoweb.png" /></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+
+
+    @RenderBody()
+
+    <div class="footer">
+
+        <div class="container">
+
+
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Information</h4>
+                    <ul class="row">
+                        <li class="col-lg-12 col-sm-12 col-xs-3"><a href="about.php">About</a></li>
+                        <li class="col-lg-12 col-sm-12 col-xs-3"><a href="agents.php">Agents</a></li>
+                        <li class="col-lg-12 col-sm-12 col-xs-3"><a href="blog.php">Blog</a></li>
+                        <li class="col-lg-12 col-sm-12 col-xs-3"><a href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Newsletter</h4>
+                    <p>Get notified about the latest properties in our marketplace.</p>
+                    <form class="form-inline" role="form">
+                        <input type="text" placeholder="Enter Your email address" class="form-control">
+                        <button class="btn btn-success" type="button">Notify Me!</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Follow us</h4>
+                    <a href="#"><img src="~/images/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="~/images/twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="~/images/linkedin.png" alt="linkedin"></a>
+                    <a href="#"><img src="~/images/instagram.png" alt="instagram"></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Contact us</h4>
+                    <p>
+                        <b>CaoỐcHuflit.CF</b><br>
+                        <span class="glyphicon glyphicon-map-marker"></span> 155 Sư Vạn Hạnh (nd)<br />Phường 13, Quận 10, TP.HCM <br>
+                        <span class="glyphicon glyphicon-envelope"></span> hcontact@huflit.edu.vn<br>
+                        <span class="glyphicon glyphicon-earphone"></span> 0984 190 843
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<noembed>
+</html>

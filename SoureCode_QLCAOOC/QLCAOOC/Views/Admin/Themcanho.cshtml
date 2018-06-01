@@ -1,0 +1,69 @@
+﻿@model QLCAOOC.Models.CANHO
+
+@{
+    ViewBag.Title = "THÊM CĂN HỘ MỚI";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-plus"></i> Thêm căn hộ mới</h3></li>
+</ol>
+@using (Html.BeginForm("themcanho", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Mã Căn Hộ:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.MaCanHo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MaCanHo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Hình ảnh:</b>
+            </div>
+            <div class="col-md-5">
+                <input type="file" name="fileupload" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Ghi chú:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Diện tích:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("MaDienTich")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Tầng:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("MaTang")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-5">
+                <input type="submit" value="Thêm mới" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}

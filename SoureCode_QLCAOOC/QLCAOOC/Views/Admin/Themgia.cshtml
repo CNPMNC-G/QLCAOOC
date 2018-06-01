@@ -1,0 +1,52 @@
+﻿@model QLCAOOC.Models.GIA
+
+@{
+    ViewBag.Title = "THÊM MỨC GIÁ MỚI";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-plus"></i> Thêm mức giá mới</h3></li>
+</ol>
+
+@using (Html.BeginForm("themgia", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Diện tích:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("DienTich")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Tầng:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("Tang")
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Giá:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Gia1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Gia1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm mới" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}

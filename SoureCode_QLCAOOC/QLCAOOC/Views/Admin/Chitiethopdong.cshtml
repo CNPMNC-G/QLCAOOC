@@ -1,0 +1,94 @@
+﻿@model QLCAOOC.Models.HOPDONG
+
+@{
+    ViewBag.Title = "CHI TIẾT HỢP ĐỒNG";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-info"></i> Chi tiết hợp đồng</h3></li>
+</ol>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Hợp đồng số:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaHopDong)
+        </dd>
+
+        <dt>
+            Căn hộ:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCanHo)
+        </dd>
+
+        <dt>
+            Chủ hợp đồng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NHANKHAU.HoTen)
+        </dd>
+
+        <dt>
+            Ngày bắt đầu thuê:
+        </dt>
+
+        <dd>
+            @String.Format("{0:dd/MM/yyyy}", Model.NgayBatDauThue)
+        </dd>
+
+        <dt>
+            Ngày hết hạn:
+        </dt>
+
+        <dd>
+            @String.Format("{0:dd/MM/yyyy}", Model.NgayHetHan)
+        </dd>
+
+        <dt>
+            Giá căn hộ:
+        </dt>
+
+        <dd>
+            @string.Format("{0:0,0}", Model.GiaPhong).Replace(",", ".") VNĐ/tháng
+        </dd>
+
+        <dt>
+            Thời gian thuê:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianThue) tháng
+        </dd>
+
+        <dt>
+            Đã thanh toán:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DaThanhToan) tháng
+        </dd>
+        <dt>
+            Nhập số tháng gia hạn:
+        </dt>
+    </dl>
+    @using (Html.BeginForm("chitiethopdong", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="Nhập số tháng" name="so" value="@ViewBag.Keyword" pattern="[0-9]{0-3}" width="100">
+
+            </div>
+            <div class="col-md-5">
+                <button class="btn btn-warning" type="submit">Gia hạn</button>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,85 @@
+﻿@model QLCAOOC.Models.CANHO
+
+@{
+    ViewBag.Title = "SỬA THÔNG TIN CĂN HỘ";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-refresh"></i> Sửa thông tin căn hộ</h3></li>
+</ol>
+
+@using (Html.BeginForm("Suacanho", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaCanHo)
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                <b>Mã căn hộ:</b>
+            </div>
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.MaCanHo)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                <b>Tình trạng:</b>
+            </div>
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.TinhTrang)
+            </div>
+        </div>
+
+        @*Hình ảnh*@
+        <div class="form-group">
+            <span class="control-label col-md-2"><b>Hình ảnh</b></span>
+            <div class="col-md-10">
+                <img src="@Url.Content("~/images/canho/"+@Model.HinhAnh)" width="150px" height="120px" />
+                <br />
+                <input type="file" name="fileupload" />
+                @ViewBag.Thongbao
+            </div>
+        </div>
+
+        @*Ghi chú*@
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                <b>Ghi chú:</b>
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GhiChu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*Mã diện tích*@
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                <b>Diện tích:</b>
+            </div>
+            <div class="col-md-10">
+                @Html.DropDownList("MaDienTich")
+            </div>
+        </div>
+
+        @*Mã tầng*@
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                <b>Tầng:</b>
+            </div>
+            <div class="col-md-10">
+                @Html.DropDownList("MaTang")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-warning" />
+            </div>
+        </div>
+    </div>
+}

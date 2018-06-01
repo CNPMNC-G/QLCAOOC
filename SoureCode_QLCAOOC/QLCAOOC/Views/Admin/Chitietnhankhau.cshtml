@@ -1,0 +1,86 @@
+﻿@model QLCAOOC.Models.NHANKHAU
+
+@{
+    ViewBag.Title = "CHI TIẾT NHÂN KHẨU";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-info"></i> Chi tiết nhân khẩu</h3></li>
+</ol>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Họ tên:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            CMND:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CMND)
+        </dd>
+
+        <dt>
+            Điện thoại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienThoai)
+        </dd>
+
+        <dt>
+            Địa chỉ:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Hình ảnh:
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/images/nhankhau/"+@Model.HinhAnh)" width="120px" height="120px" />
+        </dd>
+
+        <dt>
+            Căn hộ đang ở:
+        </dt>
+
+        <dd>
+            @if (Model.MaHopDong == null)
+            {
+                <font>Không có</font>
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.HOPDONG.MaCanHo)
+            }
+        </dd>
+
+        <dt>
+            Tài khoản:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDN)
+        </dd>
+
+        <dt>
+            Mật khẩu:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatKhau)
+        </dd>
+
+    </dl>
+</div>

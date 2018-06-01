@@ -1,0 +1,41 @@
+﻿@model IEnumerable<QLCAOOC.Models.CANHO>
+
+@{
+    ViewBag.Title = "THUÊ CĂN HỘ GIÁ RẺ";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div class="container">
+    <div class="properties-listing spacer">
+        <h2><span class="glyphicon glyphicon-list"></span> DANH SÁCH CĂN HỘ</h2>
+        <div id="owl-example" class="owl-carousel">
+            @foreach (var canho in Model)
+            {
+                <div class="properties">
+                    <div class="image-holder">
+                        <img src="~/images/canho/@canho.HinhAnh" class="img-responsive" alt="properties" />
+                        @if (@canho.TinhTrang == "Còn trống")
+                        {
+                            <div class="status sold">@canho.TinhTrang</div>
+                        }
+                        else
+                        {
+                            <div class="status new">@canho.TinhTrang</div>
+                        }
+                    </div>
+                    <h4><a href="@Url.Action("Details", "Trangchu", new {id = canho.MaCanHo})">Căn hộ: @canho.MaCanHo</a></h4>
+                    <p class="price">
+                        <span class="glyphicon glyphicon-map-marker"></span> Tầng: <font color="red">@canho.MaTang</font>
+                        <br /><span class="glyphicon glyphicon-new-window"></span> Diện tích: <font color="red">@canho.GIA.DIENTICH.TenDienTich</font>
+                    </p>
+                    <p class="price">
+                        <span class="glyphicon glyphicon-plus"></span> Giá: <font color="red">@string.Format("{0:0,0}", @canho.GIA.Gia1).Replace(",", ".") VNĐ</font>
+                    </p>
+                    <a class="btn btn-primary" href="@Url.Action("Details", "Trangchu", new {id = canho.MaCanHo})">Chi tiết</a>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</div>

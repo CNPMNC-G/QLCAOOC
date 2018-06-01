@@ -1,0 +1,94 @@
+﻿@model IEnumerable<QLCAOOC.Models.PHIEUTHUTIEN>
+
+@{
+    ViewBag.Title = "QUẢN LÝ PHIẾU THU TIỀN";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-money"></i> Quản lý phiếu thu tiền</h3></li>
+</ol>
+<p>
+    <a href="@Url.Action("themphieuthu", "admin")"><button class="btn btn-success">Thêm phiếu thu mới</button></a>
+</p>
+<table id="table_id"
+       class="table table-condensed table-striped table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Căn hộ:
+            </th>
+            <th>
+                Đợt thu:
+            </th>
+            <th>
+                Ngày thu:
+            </th>
+            <th>
+                Giá căn hộ:
+            </th>
+            <th>
+                Số tháng thanh toán:
+            </th>
+            <th>
+                Thành tiền:
+            </th>
+            <th>
+                Thao tác:
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HOPDONG.MaCanHo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DotThu)
+                </td>
+                <td>
+                    @String.Format("{0:dd/MM/yyyy}", item.NgayThu)
+                </td>
+                <td>
+                    @string.Format("{0:0,0}", item.HOPDONG.GiaPhong).Replace(",", ".") VNĐ/tháng
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoThangThu) tháng
+                </td>
+                <td>
+                    @string.Format("{0:0,0}", item.SoTien).Replace(",", ".") VNĐ
+                </td>
+                <td>
+                    <a href="@Url.Action("ExportPhieuThu", "admin", new { id = item.MaPhieuThu })"><button type="button" class="btn btn-warning">In PDF</button> </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+@section scripts
+{
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#table_id').dataTable();
+    });
+    </script>
+    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"> </script>
+
+}
+@section css
+{
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+
+}
+
+
+
+
+

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<QLCAOOC.Models.DIENTICH>
+
+@{
+    ViewBag.Title = "QUẢN LÝ DIỆN TÍCH";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-square"></i> Quản lý diện tích</h3></li>
+</ol>
+<p>
+    <a href="@Url.Action("themdientich", "admin")"><button class="btn btn-success">Thêm diện tích mới</button></a>
+</p>
+<table id="table_id"
+       class="table table-condensed table-striped table-hover">
+
+    <thead>
+        <tr>
+            <th>
+                Diện tích:
+            </th>
+            <th>
+                Tên gọi:
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaDienTich)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenDienTich)
+                </td>
+                <td>
+                    <a href="@Url.Action("suadientich", "admin", new { id = item.MaDienTich})"><button type="button" class="btn btn-warning">Sửa</button> </a>
+                    <a href="@Url.Action("xoadientich", "admin", new { id = item.MaDienTich})"><button type="button" class="btn btn-danger">Xóa</button></a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+@section scripts
+{
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#table_id').dataTable();
+    });
+    </script>
+    <script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js"> </script>
+
+}
+@section css
+{
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+
+}
+
+
+
+
+

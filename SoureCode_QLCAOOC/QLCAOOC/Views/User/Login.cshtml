@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ĐĂNG NHẬP TÀI KHOẢN";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="~/Content/style.css" rel="stylesheet" />
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div class="khoi">
+        <div class="login">
+            <h1>ĐĂNG NHẬP</h1>
+
+            <h4 style="color:red; text-align:center">@ViewBag.Thongbao</h4>
+            <p><input type="text" name="TenDN" value="" placeholder="Tên đăng nhập"></p>
+            <h4 style="color:red">@ViewData["Loi1"]</h4>
+            <p><input type="password" name="Matkhau" value="" placeholder="Mật khẩu"></p>
+            <h4 style="color:red">@ViewData["Loi2"]</h4>
+            <p class="remember_me">
+                <label>
+                    <input type="checkbox" name="remember_me" id="remember_me" /> Lưu tài khoản?
+                </label>
+            </p>
+            <p class="submit"><input type="submit" name="commit" value="Login"></p>
+        </div>
+    </div>
+}

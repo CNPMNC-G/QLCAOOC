@@ -1,0 +1,61 @@
+﻿@model QLCAOOC.Models.HOPDONG
+
+@{
+    ViewBag.Title = "THÊM HỢP ĐỒNG";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><h3><i class="fa fa-fw fa-plus"></i> Thêm hợp đồng mới</h3></li>
+</ol>
+
+@using (Html.BeginForm("themhopdong", "Admin", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Căn Hộ:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("MaCanho")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Ngày bắt đầu thuê:</b>
+            </div>
+            <div class="col-md-5">
+                <input type="date" name="NgayBatDauThue" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-2">
+                <b>Khách hàng:</b>
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownList("MaNK")
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-5">
+                <b>Thời gian thuê:</b> (ít nhất 6 tháng)
+                <p><font color="red">@ViewBag.Thongbao</font></p>
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.ThoiGianThue, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThoiGianThue, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm mới" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
